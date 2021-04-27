@@ -96,6 +96,7 @@ export default {
       this.tirgger = null;
     },
     //特殊情况下的动画处理
+    //利用flex中order的特性，修改元素的排列位置，从而实现无缝轮播
     handleSpecial(currentIndex, targetIndex) {
       // 右边界特殊情况
       if (currentIndex == this.father_items_length - 1 && targetIndex == 0) {
